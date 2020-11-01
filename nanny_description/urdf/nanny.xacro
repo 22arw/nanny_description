@@ -4,6 +4,17 @@
 <xacro:include filename="$(find nanny_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find nanny_description)/urdf/nanny.trans" />
 <xacro:include filename="$(find nanny_description)/urdf/nanny.gazebo" />
+
+<xacro:property name="cameraSize" value="0.05"/>
+<xacro:property name="cameraMass" value="0.1"/>
+
+<link name="dummy"> 
+</link> 
+<joint name="dummy_joint" type="fixed">
+ <parent link="dummy"/>
+ <child link="base_link"/> 
+</joint>
+
 <link name="base_link">
   <inertial>
     <origin rpy="0 0 0" xyz="0.4999709515803751 -0.14927018860497332 0.005627893204435959"/>
@@ -1054,5 +1065,67 @@
   <parent link="extrude3__1__1"/>
   <child link="universalplate_v1__3__1"/>
 </joint>
+
+<!--camera-->
+<link name="camera">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+
+    <inertial>
+      <mass value="${cameraMass}" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz=".15 -.02 -.015" rpy="0 0 -1.6"/>
+    <parent link="universalplate_v1__1__1"/>
+    <child link="camera"/>
+  </joint>
+
+ <!-- sensor --> 
+  <joint name="laser_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz=".165 .30 .05" rpy="0 0 0"/>
+    <parent link="universalplate_v1__1__1"/>
+    <child link="laser"/>
+  </joint>
+ 
+  <link name="laser">
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+    <box size="0.1 0.1 0.1"/>
+      </geometry>
+    </collision>
+
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/laser.dae"/>
+      </geometry>
+    </visual>
+
+    <inertial>
+      <mass value="1e-5" />
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
 
 </robot>
