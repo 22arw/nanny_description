@@ -22,14 +22,14 @@
     <inertia ixx="0.25996" ixy="-9.5e-05" ixz="0.0" iyy="0.399589" iyz="0.0" izz="0.659248"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.021978"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <origin rpy="0 0 0" xyz="0 0 0.021978"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -43,14 +43,14 @@
     <inertia ixx="0.013324" ixy="-3.4e-05" ixz="-3.4e-05" iyy="0.040366" iyz="-7e-06" izz="0.04016"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.144318 0.27111 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.144318 0.27111 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/motor_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.144318 0.27111 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.144318 0.27111 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/motor_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -64,14 +64,14 @@
     <inertia ixx="0.013324" ixy="-3.4e-05" ixz="3.4e-05" iyy="0.040366" iyz="7e-06" izz="0.04016"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.808518 0.27111 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.808518 0.27111 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/motor_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.808518 0.27111 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.808518 0.27111 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/motor_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -85,14 +85,14 @@
     <inertia ixx="0.001747" ixy="-0.0" ixz="0.0" iyy="0.000923" iyz="0.0" izz="0.000923"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.068818 0.271212 -0.056647"/>
+    <origin rpy="0 0 0" xyz="-0.068818 0.271212 -0.034669"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/wheel_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.068818 0.271212 -0.056647"/>
+    <origin rpy="0 0 0" xyz="-0.068818 0.271212 -0.034669"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/wheel_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -106,14 +106,14 @@
     <inertia ixx="0.001747" ixy="-0.0" ixz="-0.0" iyy="0.000923" iyz="-0.0" izz="0.000923"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.931018 0.271009 -0.056647"/>
+    <origin rpy="0 0 0" xyz="-0.931018 0.271009 -0.034669"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.931018 0.271009 -0.056647"/>
+    <origin rpy="0 0 0" xyz="-0.931018 0.271009 -0.034669"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/wheel_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -127,14 +127,14 @@
     <inertia ixx="0.000397" ixy="-0.0" ixz="0.0" iyy="0.000378" iyz="0.0" izz="3.3e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.826018 0.094334 0.000722"/>
+    <origin rpy="0 0 0" xyz="-0.826018 0.094334 0.0227"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.826018 0.094334 0.000722"/>
+    <origin rpy="0 0 0" xyz="-0.826018 0.094334 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -148,14 +148,14 @@
     <inertia ixx="0.000397" ixy="-0.0" ixz="0.0" iyy="0.000378" iyz="0.0" izz="3.3e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.180818 0.074834 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.180818 0.074834 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.180818 0.074834 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.180818 0.074834 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -169,14 +169,14 @@
     <inertia ixx="0.000378" ixy="0.0" ixz="-0.0" iyy="0.000397" iyz="-0.0" izz="3.3e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.321318 0.379834 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.321318 0.379834 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.321318 0.379834 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.321318 0.379834 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -190,14 +190,14 @@
     <inertia ixx="0.000378" ixy="0.0" ixz="-0.0" iyy="0.000397" iyz="0.0" izz="3.3e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.690018 0.369334 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.690018 0.369334 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.690018 0.369334 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.690018 0.369334 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -211,14 +211,14 @@
     <inertia ixx="0.000378" ixy="0.0" ixz="-0.0" iyy="0.000397" iyz="0.0" izz="3.3e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.519747 -0.230753 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.519747 -0.230753 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.519747 -0.230753 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.519747 -0.230753 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -232,14 +232,14 @@
     <inertia ixx="0.047316" ixy="-0.0" ixz="0.0" iyy="0.103412" iyz="-0.0" izz="0.135119"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.674918 0.31791 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.674918 0.31791 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/battery_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.674918 0.31791 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.674918 0.31791 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/battery_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -253,14 +253,14 @@
     <inertia ixx="0.019505" ixy="0.0" ixz="-0.0" iyy="0.00638" iyz="1.2e-05" izz="0.014216"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.181515 0.330913 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.181515 0.330913 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/bracket_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.181515 0.330913 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.181515 0.330913 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/bracket_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -274,14 +274,14 @@
     <inertia ixx="0.019505" ixy="0.0" ixz="-0.0" iyy="0.00638" iyz="1.2e-05" izz="0.014216"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.818321 0.335913 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.818321 0.335913 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/bracket_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.818321 0.335913 -0.011978"/>
+    <origin rpy="0 0 0" xyz="-0.818321 0.335913 0.01"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/bracket_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -295,14 +295,14 @@
     <inertia ixx="0.438684" ixy="-0.000175" ixz="0.0" iyy="0.454628" iyz="0.0" izz="0.893028"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.339208 0.371284 -0.220013"/>
+    <origin rpy="0 0 0" xyz="-0.339208 0.371284 -0.198035"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.339208 0.371284 -0.220013"/>
+    <origin rpy="0 0 0" xyz="-0.339208 0.371284 -0.198035"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -316,14 +316,14 @@
     <inertia ixx="0.002151" ixy="-0.0" ixz="-0.0" iyy="0.001975" iyz="0.000571" izz="0.001293"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.240208 -0.166116 -0.220013"/>
+    <origin rpy="0 0 0" xyz="-0.240208 -0.166116 -0.198035"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castorconnect_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.240208 -0.166116 -0.220013"/>
+    <origin rpy="0 0 0" xyz="-0.240208 -0.166116 -0.198035"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castorconnect_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -337,14 +337,14 @@
     <inertia ixx="0.002151" ixy="-0.0" ixz="-0.0" iyy="0.001975" iyz="0.000571" izz="0.001293"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.759408 -0.166116 -0.220013"/>
+    <origin rpy="0 0 0" xyz="-0.759408 -0.166116 -0.198035"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castorconnect_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.759408 -0.166116 -0.220013"/>
+    <origin rpy="0 0 0" xyz="-0.759408 -0.166116 -0.198035"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castorconnect_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -358,14 +358,14 @@
     <inertia ixx="0.015662" ixy="0.0" ixz="-0.0" iyy="0.008205" iyz="0.0" izz="0.008205"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.253053 -0.228029 -0.080313"/>
+    <origin rpy="0 0 0" xyz="-0.253053 -0.228029 -0.058335"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castor_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.253053 -0.228029 -0.080313"/>
+    <origin rpy="0 0 0" xyz="-0.253053 -0.228029 -0.058335"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castor_v1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -379,14 +379,14 @@
     <inertia ixx="0.015662" ixy="0.0" ixz="0.0" iyy="0.008205" iyz="0.0" izz="0.008205"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.746563 -0.221679 -0.080313"/>
+    <origin rpy="0 0 0" xyz="-0.746563 -0.221679 -0.058335"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castor_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.746563 -0.221679 -0.080313"/>
+    <origin rpy="0 0 0" xyz="-0.746563 -0.221679 -0.058335"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/castor_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -400,14 +400,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="0.0" iyy="0.003997" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.354708 0.380784 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.354708 0.380784 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.354708 0.380784 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.354708 0.380784 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -421,14 +421,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="-0.0" iyy="0.003997" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.655908 0.372759 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.655908 0.372759 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.655908 0.372759 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.655908 0.372759 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -442,14 +442,14 @@
     <inertia ixx="0.003997" ixy="-0.0" ixz="0.0" iyy="0.003955" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.831708 0.016584 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.831708 0.016584 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.831708 0.016584 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.831708 0.016584 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -463,14 +463,14 @@
     <inertia ixx="0.003997" ixy="-0.0" ixz="0.0" iyy="0.003955" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.167723 0.041484 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.167723 0.041484 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.167723 0.041484 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.167723 0.041484 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -484,14 +484,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="0.0" iyy="0.003997" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.346208 -0.234216 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.346208 -0.234216 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.346208 -0.234216 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.346208 -0.234216 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -505,14 +505,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="-0.0" iyy="0.003997" iyz="-0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.664208 -0.223316 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.664208 -0.223316 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.664208 -0.223316 -0.232713"/>
+    <origin rpy="0 0 0" xyz="-0.664208 -0.223316 -0.210735"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude2_6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -526,14 +526,14 @@
     <inertia ixx="0.438682" ixy="-9.8e-05" ixz="0.0" iyy="0.454629" iyz="0.0" izz="0.893028"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.339287 0.371159 -0.689748"/>
+    <origin rpy="0 0 0" xyz="-0.339287 0.371159 -0.66777"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.339287 0.371159 -0.689748"/>
+    <origin rpy="0 0 0" xyz="-0.339287 0.371159 -0.66777"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -547,14 +547,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="0.0" iyy="0.003997" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.294756 0.377544 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.294756 0.377544 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.294756 0.377544 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.294756 0.377544 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -568,14 +568,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="0.0" iyy="0.003997" iyz="-0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.705977 0.374254 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.705977 0.374254 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.705977 0.374254 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.705977 0.374254 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -589,14 +589,14 @@
     <inertia ixx="0.003997" ixy="-0.0" ixz="0.0" iyy="0.003955" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.836218 0.096679 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.836218 0.096679 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.836218 0.096679 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.836218 0.096679 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -610,14 +610,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="0.0" iyy="0.003997" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.718816 -0.216805 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.718816 -0.216805 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.718816 -0.216805 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.718816 -0.216805 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -631,14 +631,14 @@
     <inertia ixx="0.003997" ixy="-0.0" ixz="-0.0" iyy="0.003955" iyz="-0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.169055 0.090614 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.169055 0.090614 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.169055 0.090614 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.169055 0.090614 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -652,14 +652,14 @@
     <inertia ixx="0.003955" ixy="0.0" ixz="-0.0" iyy="0.003997" iyz="0.0" izz="7.2e-05"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.309164 -0.224709 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.309164 -0.224709 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.309164 -0.224709 -0.702448"/>
+    <origin rpy="0 0 0" xyz="-0.309164 -0.224709 -0.68047"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3_6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -673,14 +673,14 @@
     <inertia ixx="0.438682" ixy="-9.8e-05" ixz="0.0" iyy="0.454629" iyz="-0.0" izz="0.893028"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.339211 0.371243 -1.159483"/>
+    <origin rpy="0 0 0" xyz="-0.339211 0.371243 -1.13751"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.339211 0.371243 -1.159483"/>
+    <origin rpy="0 0 0" xyz="-0.339211 0.371243 -1.13751"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1__2__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -694,14 +694,14 @@
     <inertia ixx="0.024316" ixy="0.0" ixz="-0.0" iyy="0.024393" iyz="-0.0" izz="0.000132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.374645 0.382024 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.374645 0.382024 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.374645 0.382024 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.374645 0.382024 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -715,14 +715,14 @@
     <inertia ixx="0.024316" ixy="0.0" ixz="-0.0" iyy="0.024393" iyz="-0.0" izz="0.000132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.658886 0.377162 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.658886 0.377162 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.658886 0.377162 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.658886 0.377162 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -736,14 +736,14 @@
     <inertia ixx="0.024393" ixy="-0.0" ixz="-0.0" iyy="0.024316" iyz="-0.0" izz="0.000132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.83349 0.027726 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.83349 0.027726 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.83349 0.027726 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.83349 0.027726 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -757,14 +757,14 @@
     <inertia ixx="0.024393" ixy="-0.0" ixz="-0.0" iyy="0.024316" iyz="-0.0" izz="0.000132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.169277 0.049619 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.169277 0.049619 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.169277 0.049619 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.169277 0.049619 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -778,14 +778,14 @@
     <inertia ixx="0.024316" ixy="0.0" ixz="-0.0" iyy="0.024393" iyz="-0.0" izz="0.000132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.636826 -0.231827 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.636826 -0.231827 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.636826 -0.231827 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.636826 -0.231827 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__5.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -799,14 +799,14 @@
     <inertia ixx="0.024316" ixy="0.0" ixz="0.0" iyy="0.024393" iyz="0.0" izz="0.000132"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.346508 -0.228728 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.346508 -0.228728 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.346508 -0.228728 -1.172183"/>
+    <origin rpy="0 0 0" xyz="-0.346508 -0.228728 -1.15021"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/extrude3__1__6.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -820,14 +820,14 @@
     <inertia ixx="0.438682" ixy="-9.8e-05" ixz="0.0" iyy="0.454629" iyz="0.0" izz="0.893028"/>
   </inertial>
   <visual>
-    <origin rpy="0 0 0" xyz="-0.364196 0.371448 -2.010218"/>
+    <origin rpy="0 0 0" xyz="-0.364196 0.371448 -1.98824"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin rpy="0 0 0" xyz="-0.364196 0.371448 -2.010218"/>
+    <origin rpy="0 0 0" xyz="-0.364196 0.371448 -1.98824"/>
     <geometry>
       <mesh filename="package://nanny_description/meshes/universalplate_v1__3__1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -861,7 +861,7 @@
 </joint>
 
 <joint name="Rigid8" type="fixed">
-  <origin rpy="0 0 0" xyz="0.826018 -0.094334 -0.000722"/>
+  <origin rpy="0 0 0" xyz="0.826018 -0.094334 0.011978"/>
   <parent link="base_link"/>
   <child link="extrude_1"/>
 </joint>
@@ -1069,14 +1069,14 @@
 <!--camera-->
 <link name="camera">
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0.021978"/>
       <geometry>
         <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
       </geometry>
     </collision>
 
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0.021978"/>
       <geometry>
         <box size="${cameraSize} ${cameraSize} ${cameraSize}"/>
       </geometry>
@@ -1085,7 +1085,7 @@
 
     <inertial>
       <mass value="${cameraMass}" />
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 -1.578022"/>
       <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
     </inertial>
@@ -1093,7 +1093,7 @@
 
   <joint name="camera_joint" type="fixed">
     <axis xyz="0 1 0" />
-    <origin xyz=".15 -.02 -.015" rpy="0 0 -1.6"/>
+    <origin xyz=".15 -.02 .015" rpy="0 0 -1.6"/>
     <parent link="universalplate_v1__1__1"/>
     <child link="camera"/>
   </joint>
@@ -1101,21 +1101,21 @@
  <!-- sensor --> 
   <joint name="laser_joint" type="fixed">
     <axis xyz="0 1 0" />
-    <origin xyz=".165 .30 .05" rpy="0 0 0"/>
+    <origin xyz=".165 .30 .07" rpy="0 0 0.02"/>
     <parent link="universalplate_v1__1__1"/>
     <child link="laser"/>
   </joint>
  
   <link name="laser">
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0.021978"/>
       <geometry>
     <box size="0.1 0.1 0.1"/>
       </geometry>
     </collision>
 
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="0 0 0.021978"/>
       <geometry>
         <mesh filename="package://nanny_description/meshes/laser.dae"/>
       </geometry>
