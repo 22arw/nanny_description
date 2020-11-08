@@ -850,14 +850,14 @@
   <origin rpy="0 0 0" xyz="-0.0755 -0.000102 0.044669"/>
   <parent link="motor_v1__1__1"/>
   <child link="wheel_v1__1__1"/>
-  <axis xyz="1.0 0.0 -0.0"/>
+  <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="Rev4" type="continuous">
   <origin rpy="0 0 0" xyz="0.1225 0.000101 0.044669"/>
   <parent link="motor_v1_1"/>
   <child link="wheel_v1_1"/>
-  <axis xyz="-1.0 -0.0 -0.0"/>
+  <axis xyz="1.0 0.0 0.0"/>
 </joint>
 
 <joint name="Rigid8" type="fixed">
