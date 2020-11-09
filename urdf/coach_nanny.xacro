@@ -1,0 +1,146 @@
+<?xml version="1.0" ?>
+<robot name="nanny"
+    xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.7112 0.8128 1.876"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <box size="0.7112 0.8128 1.876"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <!-- <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/> -->
+            <mass value="10.0"/>
+            <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+        </inertial>
+    </link>
+
+    <link name="right_wheel">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 1.54 0.0"/>
+            <geometry>
+                <cylinder radius="0.0508" length="0.0381"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 1.54 0.0"/>
+            <geometry>
+                <cylinder radius="0.0508" length="0.0381"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <!-- <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/> -->
+            <mass value="5.0"/>
+            <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+        </inertial>
+    </link>
+
+    <link name="left_wheel">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 1.54 0.0"/>
+            <geometry>
+                <cylinder radius="0.0508" length="0.0381"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 1.54 0.0"/>
+            <geometry>
+                <cylinder radius="0.0508" length="0.0381"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <!-- <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/> -->
+            <mass value="5.0"/>
+            <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+        </inertial>
+    </link>
+
+    <link name="caster_ball">
+        <visual>
+            <geometry>
+                <sphere radius="0.0508"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <sphere radius="0.0508"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <!-- <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/> -->
+            <mass value="5.0"/>
+            <inertia ixx="0.4" ixy="0.0" ixz="0.0" iyy="0.4" iyz="0.0" izz="0.2"/>
+        </inertial>
+    </link>
+
+    <joint name="base_link_right_wheel" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_wheel"/>
+        <axis xyz="1 0 0"/>
+        <origin xyz="${(0.7112 /2 + 0.0381 / 2) * 1} ${0.8128/3} ${(1.876 / 2) * -1}" rpy="0.0 0.0 0.0"/>
+
+    </joint>
+
+    <joint name="base_link_left_wheel" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_wheel"/>
+        <axis xyz="1 0 0"/>
+        <origin xyz="${(0.7112 /2 + 0.0381 / 2) * -1} ${0.8128/3} ${(1.876 / 2) * -1}" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="base_link_caster_ball" type="continuous">
+        <origin xyz="0.0 ${(0.8128/3) * -1} ${(1.876 / 2) * -1}" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="caster_ball"/>
+        <axis xyz="1 0 0"/>
+    </joint>
+
+    <transmission name="right_wheel_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <actuator name="right_wheel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+        <joint name="base_link_right_wheel">
+            <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        </joint>
+    </transmission>
+
+    <transmission name="left_wheel_trans">
+        <type>transmission_interface/SimpleTransmission</type>
+        <actuator name="left_wheel_motor">
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+        <joint name="base_link_left_wheel">
+            <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        </joint>
+    </transmission>
+
+    <gazebo reference="left_wheel">
+        <mu1 value="200.0"/>
+        <mu2 value="100.0"/>
+        <kp value="10000000.0" />
+        <kd value="1.0" />
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <mu1 value="200.0"/>
+        <mu2 value="100.0"/>
+        <kp value="10000000.0" />
+        <kd value="1.0" />
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+</robot>
