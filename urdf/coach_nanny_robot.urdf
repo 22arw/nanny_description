@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="coach_nanny_robot">
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.000485876477299294 -0.0274803192482124 0.200968736699583" rpy="0 0 0" />
+      <mass value="26.8043249525411" />
+      <inertia ixx="0.520727995790806" ixy="-2.06390204239143E-05" ixz="7.56228723385917E-07" iyy="0.514405361982081" iyz="6.52875963583466E-07" izz="0.90410540417397" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/base_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="left_wheel">
+    <inertial>
+      <origin xyz="0.0028521 3.0817E-06 -1.9175E-06" rpy="0 0 0" />
+      <mass value="0.84408" />
+      <inertia ixx="0.0024173" ixy="-2.9321E-09" ixz="2.7147E-09" iyy="0.0013064" iyz="-4.1326E-08" izz="0.0013061" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/left_wheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.66667 0.69804 0.76863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.54 0" />
+      <geometry>
+        <!-- <mesh filename="package://nanny_description/meshes/left_wheel.STL" /> -->
+        <cylinder radius="0.08" length="0.03175"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_left_wheel" type="continuous">
+    <origin xyz="0.27871 -0.17336 0.048701" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="left_wheel" />
+    <axis xyz="1 0 0" />
+  </joint>
+
+  <link name="right_wheel">
+    <inertial>
+      <origin xyz="-0.0028521 -3.0817E-06 -1.9175E-06" rpy="0 0 0" />
+      <mass value="0.84408" />
+      <inertia ixx="0.0024173" ixy="-2.9321E-09" ixz="-2.7147E-09" iyy="0.0013064" iyz="4.1326E-08" izz="0.0013061" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/right_wheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.66667 0.69804 0.76863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.54 0" />
+      <geometry>
+        <!-- <mesh filename="package://nanny_description/meshes/right_wheel.STL" /> -->
+        <cylinder radius="0.08" length="0.03175"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_right_wheel" type="continuous">
+    <origin xyz="-0.27871 -0.17336 0.048701" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="right_wheel" />
+    <axis xyz="1 0 0" />
+  </joint>
+
+  <link name="left_caster_swivel">
+    <inertial>
+      <origin xyz="0.00048018 0.010795 -0.022667" rpy="0 0 0" />
+      <mass value="1.6279" />
+      <inertia ixx="0.0019848" ixy="6.4372E-12" ixz="-9.7937E-13" iyy="0.0022172" iyz="0.00051674" izz="0.002369" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/left_caster_swivel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.64706 0.61961 0.58824 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/left_caster_swivel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_left_caster_swivel" type="continuous">
+    <origin xyz="0.19643 0.1984 0.092538" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="left_caster_swivel" />
+    <axis xyz="0 0 1" />
+  </joint>
+
+  <link name="left_caster_wheel">
+    <inertial>
+      <origin xyz="-0.012954 0 -3.4694E-18" rpy="0 0 0" />
+      <mass value="0.47001" />
+      <inertia ixx="0.00053889" ixy="-2.9703E-20" ixz="-5.1765E-21" iyy="0.00037833" iyz="-1.0671E-20" izz="0.00037833" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/left_caster_wheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/left_caster_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_caster_swivel_left_caster_wheel" type="continuous">
+    <origin xyz="0.012954 0.04445 -0.071438" rpy="0 0 0" />
+    <parent link="left_caster_swivel" />
+    <child link="left_caster_wheel" />
+    <axis xyz="1 0 0" />
+  </joint>
+
+  <link name="right_caster_swivel">
+    <inertial>
+      <origin xyz="0.000480178041647045 0.0107952142667259 -0.0139360325074409" rpy="0 0 0" />
+      <mass value="1.62791183303881" />
+      <inertia ixx="0.00198478866521882" ixy="6.43720835250082E-12" ixz="-9.79370826365628E-13" iyy="0.00221717689141458" iyz="0.000516741659274806" izz="0.00236896166493278" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/right_caster_swivel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/right_caster_swivel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_right_caster_swivel" type="continuous">
+    <origin xyz="-0.19643 0.1984 0.083806" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="right_caster_swivel" />
+    <axis xyz="0 0 1" />
+  </joint>
+
+  <link name="right_caster_wheel">
+    <inertial>
+      <origin xyz="-0.405817 1.11022302462516E-16 1.04083408558608E-17" rpy="0 0 0" />
+      <mass value="0.470013684691794" />
+      <inertia ixx="0.000538891371757401" ixy="-3.20198857555599E-20" ixz="-4.2308434748141E-21" iyy="0.000378325445284186" iyz="-1.06710901829001E-20" izz="0.000378325445284186" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/right_caster_wheel.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/right_caster_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_caster_swivel_right_caster_wheel" type="continuous">
+    <origin xyz="0.40582 0.04445 -0.062706" rpy="0 0 0" />
+    <parent link="right_caster_swivel" />
+    <child link="right_caster_wheel" />
+    <axis xyz="-1 0 0" />
+  </joint>
+
+  <link name="front_laser_link">
+    <inertial>
+      <origin xyz="-3.96242181047438E-06 -0.268001190451407 0.0834622608462286" rpy="0 0 0" />
+      <mass value="0.36783372124709" />
+      <inertia ixx="9.31288280545591E-05" ixy="8.82157351104295E-09" ixz="-3.27004823808711E-11" iyy="9.17173875121383E-05" iyz="1.20873061883247E-06" izz="0.000123425149052195" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/front_laser_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/front_laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_front_laser" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="front_laser_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <link name="rear_laser_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/rear_laser_link.STL" />
+      </geometry>
+      <material name="">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://nanny_description/meshes/rear_laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="base_link_rear_laser" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="rear_laser_link" />
+    <axis xyz="0 0 0" />
+  </joint>
+
+  <transmission name="right_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="right_wheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="base_link_right_wheel">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  <transmission name="left_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <actuator name="left_wheel_motor">
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+    <joint name="base_link_left_wheel">
+      <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+    </joint>
+  </transmission>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+</robot>
