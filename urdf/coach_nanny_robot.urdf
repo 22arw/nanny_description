@@ -302,7 +302,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_gpu_laser.so">
-        <topicName>/laser/scan</topicName>
+        <topicName>/front_laser_scan</topicName>
         <frameName>odom</frameName>
       </plugin>
     </sensor>
