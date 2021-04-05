@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Coach_Nanny_Butler">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-1.06551968085109E-10 -8.06828802844026E-07 0.234819567511574"
+        rpy="0 0 0" />
+      <mass
+        value="44.766149285195" />
+      <inertia
+        ixx="1.66396255387404"
+        ixy="3.50880461801341E-08"
+        ixz="8.83078687148099E-18"
+        iyy="1.77002354702262"
+        iyz="1.11058889198517E-10"
+        izz="2.8664237727839" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.549019607843137 0.180392156862745 0.180392156862745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="front_right_swivel">
+    <inertial>
+      <origin
+        xyz="-0.0105385343606004 -0.000431579515207448 -0.0222953198080332"
+        rpy="0 0 0" />
+      <mass
+        value="1.59345861527837" />
+      <inertia
+        ixx="0.00213604390430319"
+        ixy="-3.07461915435853E-12"
+        ixz="-0.000486062070883071"
+        iyy="0.00190689536966472"
+        iyz="-1.00704438832668E-12"
+        izz="0.00230366403853992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_right_swivel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_right_swivel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_front_right_swivel"
+    type="continuous">
+    <origin
+      xyz="0.254 -0.254 0.095712"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_right_swivel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="front_right_caster">
+    <inertial>
+      <origin
+        xyz="2.77555756156289E-17 0 3.46944695195361E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.442987770505456" />
+      <inertia
+        ixx="0.000363097660011126"
+        ixy="-1.251855346303E-18"
+        ixz="-6.1346970841528E-21"
+        iyy="0.000542490473200416"
+        iyz="-1.87751112234399E-21"
+        izz="0.000363097660011126" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_right_caster.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_right_caster.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_right_swivel_front_right_caster"
+    type="continuous">
+    <origin
+      xyz="-0.04445 0 -0.071438"
+      rpy="0 0 0" />
+    <parent
+      link="front_right_swivel" />
+    <child
+      link="front_right_caster" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="2.35244232508679E-06 -0.00285205665216964 -2.76396645204624E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.844079114777031" />
+      <inertia
+        ixx="0.00130632522786826"
+        ixy="1.96746274931782E-09"
+        ixz="-1.02935065598185E-07"
+        iyy="0.00241733989203521"
+        iyz="-3.47791699410493E-09"
+        izz="0.00130617833749495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_right_wheel"
+    type="continuous">
+    <origin
+      xyz="0 -0.28302 0.051876"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="back_right_swivel">
+    <inertial>
+      <origin
+        xyz="-0.0105385343606004 -0.000431579515207503 -0.0222953198080332"
+        rpy="0 0 0" />
+      <mass
+        value="1.59345861527837" />
+      <inertia
+        ixx="0.00213604390430319"
+        ixy="-3.07461933334995E-12"
+        ixz="-0.000486062070883072"
+        iyy="0.00190689536966472"
+        iyz="-1.00704452548709E-12"
+        izz="0.00230366403853992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_right_swivel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_right_swivel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_back_left_swivel"
+    type="continuous">
+    <origin
+      xyz="-0.254 -0.254 0.095712"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_right_swivel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="back_right_caster">
+    <inertial>
+      <origin
+        xyz="0 0 6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.442987770505456" />
+      <inertia
+        ixx="0.000363097660011126"
+        ixy="-1.29608762699604E-18"
+        ixz="-4.22149657148161E-21"
+        iyy="0.000542490473200416"
+        iyz="-1.47202159597587E-20"
+        izz="0.000363097660011126" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_right_caster.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_right_caster.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_right_swivel_back_right_caster"
+    type="continuous">
+    <origin
+      xyz="-0.04445 0 -0.0714375"
+      rpy="0 0 0" />
+    <parent
+      link="back_right_swivel" />
+    <child
+      link="back_right_caster" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="front_left_swivel">
+    <inertial>
+      <origin
+        xyz="-0.0105385343606004 -0.000431579515207392 -0.0222953198080332"
+        rpy="0 0 0" />
+      <mass
+        value="1.59345861527837" />
+      <inertia
+        ixx="0.00213604390430319"
+        ixy="-3.07461951645102E-12"
+        ixz="-0.000486062070883072"
+        iyy="0.00190689536966472"
+        iyz="-1.00704421309984E-12"
+        izz="0.00230366403853992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_left_swivel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_left_swivel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_front_left_swivel"
+    type="continuous">
+    <origin
+      xyz="0.254 0.254 0.095713"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="front_left_swivel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="front_left_caster">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0.442987770505456" />
+      <inertia
+        ixx="0.000363097660011127"
+        ixy="-1.24416050088771E-18"
+        ixz="-1.43333606606265E-20"
+        iyy="0.000542490473200416"
+        iyz="-1.670925426936E-20"
+        izz="0.000363097660011126" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_left_caster.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/front_left_caster.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="front_left_swivel_front_left_caster"
+    type="continuous">
+    <origin
+      xyz="-0.04445 0 -0.0714375"
+      rpy="0 0 0" />
+    <parent
+      link="front_left_swivel" />
+    <child
+      link="front_left_caster" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="-2.35244230912796E-06 0.00285205665217325 -2.76396645206012E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.844079114777031" />
+      <inertia
+        ixx="0.00130632522786826"
+        ixy="1.96746274935324E-09"
+        ixz="1.02935065598148E-07"
+        iyy="0.0024173398920352"
+        iyz="3.47791699409911E-09"
+        izz="0.00130617833749495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.666666666666667 0.698039215686274 0.768627450980392 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_left_wheel"
+    type="continuous">
+    <origin
+      xyz="0 0.28302 0.051876"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="back_left_swivel">
+    <inertial>
+      <origin
+        xyz="-0.0105385343606004 -0.000431579515207503 -0.0222953198080332"
+        rpy="0 0 0" />
+      <mass
+        value="1.59345861527837" />
+      <inertia
+        ixx="0.00213604390430319"
+        ixy="-3.07461899363295E-12"
+        ixz="-0.000486062070883073"
+        iyy="0.00190689536966472"
+        iyz="-1.0070437964821E-12"
+        izz="0.00230366403853992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_left_swivel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_left_swivel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_back_left_swivel"
+    type="continuous">
+    <origin
+      xyz="-0.254 0.254 0.0957125000000003"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="back_left_swivel" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="back_left_caster">
+    <inertial>
+      <origin
+        xyz="0 5.55111512312578E-17 6.93889390390723E-18"
+        rpy="0 0 0" />
+      <mass
+        value="0.442987770505456" />
+      <inertia
+        ixx="0.000363097660011126"
+        ixy="-1.28686611370647E-18"
+        ixz="-9.16469472235913E-21"
+        iyy="0.000542490473200416"
+        iyz="-2.70477844640616E-20"
+        izz="0.000363097660011126" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_left_caster.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Coach_Nanny_Butler/meshes/back_left_caster.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="back_left_swivel_back_left_caster"
+    type="continuous">
+    <origin
+      xyz="-0.04445 0 -0.0714375"
+      rpy="0 0 0" />
+    <parent
+      link="back_left_swivel" />
+    <child
+      link="back_left_caster" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+</robot>
