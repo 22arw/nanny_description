@@ -3,25 +3,29 @@
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
 <robot
-  name="covid_killer_robot">
-  <link
+  name="covid_killer_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find nanny_description)/urdf/_d435.urdf.xacro" />
+  
+ <link
     name="base_link">
     <inertial>
-      <origin xyz="0.0238969108524964 0.0064934223239613 0.20470967877878" rpy="0 0 0" />
+      <origin
+        xyz="-1.06551968085109E-10 -8.06828802844026E-07 0.234819567511574"
+        rpy="0 0 1.57" />
       <mass
-        value="32.099" />
+        value="44.766149285195" />
       <inertia
-        ixx="1.1743"
-        ixy="8.2554E-11"
-        ixz="3.5533E-08"
-        iyy="1.7256"
-        iyz="1.5774E-05"
-        izz="1.1182" />
+        ixx="1.66396255387404"
+        ixy="3.50880461801341E-08"
+        ixz="8.83078687148099E-18"
+        iyy="1.77002354702262"
+        iyz="1.11058889198517E-10"
+        izz="2.8664237727839" />
     </inertial>
     <visual>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 1.57" />
       <geometry>
         <mesh
           filename="package://nanny_description/meshes/base_link.STL" />
@@ -29,13 +33,13 @@
       <material
         name="">
         <color
-          rgba="0.54902 0.18039 0.18039 1" />
+          rgba="0.549019607843137 0.180392156862745 0.180392156862745 1" />
       </material>
     </visual>
     <collision>
       <origin
         xyz="0 0 0"
-        rpy="0 0 0" />
+        rpy="0 0 1.57" />
       <geometry>
         <mesh
           filename="package://nanny_description/meshes/base_link.STL" />
@@ -86,8 +90,8 @@
     name="base_link_front_right_swivel"
     type="continuous">
     <origin
-      xyz="-0.254 -0.254 0.092538"
-      rpy="0 0 -1.5708" />
+      xyz="0.254 -0.254 0.092538"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -189,14 +193,16 @@
     name="base_link_right_wheel"
     type="continuous">
     <origin
-      xyz="-0.28302 0 0.048701"
-      rpy="0 0 -1.5708" />
+      xyz="0 -0.28302 0.048701"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="right_wheel" />
     <axis
       xyz="0 1 0" />
+<limit effort="10000" velocity="1000"/>
+	<joint_properties damping="1.0" friction="1.0"/>
   </joint>
   <link
     name="back_right_swivel">
@@ -242,8 +248,8 @@
     name="base_link_back_right_swivel"
     type="continuous">
     <origin
-      xyz="-0.254 0.254 0.092538"
-      rpy="0 0 -1.5708" />
+      xyz="-0.254 -0.254 0.092538"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -348,8 +354,8 @@
     name="base_link_front_left_swivel"
     type="continuous">
     <origin
-      xyz="0.254 -0.254 0.092538"
-      rpy="0 0 -1.5708" />
+      xyz="0.254 0.254 0.092538"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -451,14 +457,16 @@
     name="base_link_left_wheel"
     type="continuous">
     <origin
-      xyz="0.28302 0 0.048701"
-      rpy="0 0 -1.5708" />
+      xyz="0 0.28302 0.048701"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="left_wheel" />
     <axis
       xyz="0 1 0" />
+<limit effort="10000" velocity="1000"/>
+	<joint_properties damping="1.0" friction="1.0"/>
   </joint>
   <link
     name="back_left_swivel">
@@ -504,8 +512,8 @@
     name="base_link_back_left_swivel"
     type="continuous">
     <origin
-      xyz="0.254 0.254 0.092538"
-      rpy="0 0 -1.5708" />
+      xyz="-0.254 0.254 0.092538"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
@@ -566,6 +574,7 @@
     <axis
       xyz="0 -1 0" />
   </joint>
+
   <link
     name="front_laser">
     <inertial>
@@ -608,14 +617,74 @@
   </link>
   <joint
     name="base_link_front_laser"
-    type="revolute">
+    type="fixed">
     <origin
-      xyz="0 -0.38239 0.15967"
-      rpy="0 0 -1.5708" />
+      xyz="0.38239 0 0.15967"
+      rpy="0 0 0" />
     <parent
       link="base_link" />
     <child
       link="front_laser" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+<!--
+
+  <link
+    name="rear_laser">
+    <inertial>
+      <origin
+        xyz="-0.00064881 3.9624E-06 -0.0052873"
+        rpy="0 0 0" />
+      <mass
+        value="0.36783" />
+      <inertia
+        ixx="9.1717E-05"
+        ixy="8.8216E-09"
+        ixz="1.2087E-06"
+        iyy="9.3129E-05"
+        iyz="-3.27E-11"
+        izz="0.00012343" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nanny_description/meshes/front_laser.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://nanny_description/meshes/front_laser.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_link_rear_laser"
+    type="revolute">
+    <origin
+      xyz="0 0.38239 0.15967"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="rear_laser" />
     <axis
       xyz="0 0 -1" />
     <limit
@@ -624,7 +693,7 @@
       effort="0"
       velocity="0" />
   </joint>
-
+-->
   <transmission name="right_wheel_trans">
     <type>transmission_interface/SimpleTransmission</type>
     <actuator name="right_wheel_motor">
@@ -632,6 +701,8 @@
     </actuator>
     <joint name="base_link_right_wheel">
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+	<limit effort="10000" velocity="1000"/>
+	<joint_properties damping="1.0" friction="1.0"/>
     </joint>
   </transmission>
 
@@ -642,6 +713,8 @@
     </actuator>
     <joint name="base_link_left_wheel">
       <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+	<limit effort="10000" velocity="1000"/>
+	<joint_properties damping="1.0" friction="1.0"/>
     </joint>
   </transmission>
 
@@ -666,10 +739,10 @@
         </range>
         <noise>
           <type>gaussian</type>
-          <!-- Noise parameters based on published spec for Hokuyo laser
+       <!--   Noise parameters based on published spec for Hokuyo laser
                achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
                stddev of 0.01m will put 99.7% of samples within 0.03m of the true
-               reading. -->
+               reading.-->
           <mean>0.0</mean>
           <stddev>0.01</stddev>
         </noise>
@@ -680,7 +753,50 @@
       </plugin>
     </sensor>
   </gazebo>
+<!--
+  <gazebo reference="rear_laser">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>180</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>40</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+         Noise parameters based on published spec for Hokuyo laser
+               achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
 
+               stddev of 0.01m will put 99.7% of samples within 0.03m of the true
+               reading. 
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/rear_laser_scan</topicName>
+        <frameName>odom</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>-->
+    <xacro:include filename="$(find nanny_description)/urdf/_d435.urdf.xacro"/>
+  <sensor_d435 parent="base_link">
+    <origin xyz="0.38239 0  0.2" rpy="0 0 0"/>
+  </sensor_d435>
+   <!--   <sensor_d435 parent="base_link" name="frontCamera" >
+    	<origin xyz="0 -0.38239 0.2" rpy="0 0 -1.57079"/>
+    </sensor_d435>-->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/</robotNamespace>
