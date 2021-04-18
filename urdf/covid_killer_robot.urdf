@@ -201,8 +201,8 @@
       link="right_wheel" />
     <axis
       xyz="0 1 0" />
-<limit effort="10000" velocity="1000"/>
-	<joint_properties damping="1.0" friction="1.0"/>
+<!-- <limit effort="10000" velocity="1000"/>
+	<joint_properties damping="1.0" friction="1.0"/> -->
   </joint>
   <link
     name="back_right_swivel">
@@ -465,8 +465,8 @@
       link="left_wheel" />
     <axis
       xyz="0 1 0" />
-<limit effort="10000" velocity="1000"/>
-	<joint_properties damping="1.0" friction="1.0"/>
+<!--<limit effort="10000" velocity="1000"/>
+	<joint_properties damping="1.0" friction="1.0"/>-->
   </joint>
   <link
     name="back_left_swivel">
@@ -749,7 +749,8 @@
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
         <topicName>/front_laser_scan</topicName>
-        <frameName>odom</frameName>
+        <frameName>front_laser</frameName>
+	<updateRate>20</updateRate>
       </plugin>
     </sensor>
   </gazebo>
